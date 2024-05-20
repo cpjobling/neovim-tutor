@@ -74,7 +74,7 @@ read this entire lesson !!
 
  2. Type:
 
-	`:q!`{vim} `<Enter>`.
+	`:q!` `<Enter>`.
 
 	 This exits the editor, DISCARDING any changes you have made.
 
@@ -154,11 +154,11 @@ There is also some text missing here.
 
 # Lesson 1.6: EDITING A FILE
 
-**Use `:wq`{vim} to save a file and exit.**
+**Use `:wq` to save a file and exit.**
 
 !! NOTE: Before executing any of the steps below, read this entire lesson !!
 
- 1. Exit this tutor as you did in Lesson 1.2: `:q!`{vim}
+ 1. Exit this tutor as you did in Lesson 1.2: `:q!`
 	Or, if you have access to another terminal, do the following there.
 
  2. At the shell prompt type this command:
@@ -196,9 +196,9 @@ There is also some text missing here.
 	nvim FILENAME
 ~~~
 
- 3. To exit Vim type: `<Esc>` `:q!`{vim} `<Enter>` to trash
+ 3. To exit Vim type: `<Esc>` `:q!` `<Enter>` to trash
 	all changes.
-			  OR type: `<Esc>` `:wq`{vim} `<Enter>` to save
+			  OR type: `<Esc>` `:wq` `<Enter>` to save
 	the changes.
 
  4. To delete the character at the cursor type: `x`
@@ -624,7 +624,7 @@ Usually thee best time to see thee flowers is in thee spring.
 
 # Lesson 5.1: HOW TO EXECUTE AN EXTERNAL COMMAND
 
-**Type `:!`{vim} followed by an external command to execute that command.**
+**Type `:!` followed by an external command to execute that command.**
 
  1. Type the familiar command `:` to set the cursor at the bottom of
 	the screen. This allows you to enter a command-line command.
@@ -639,14 +639,14 @@ Usually thee best time to see thee flowers is in thee spring.
 NOTE: It is possible to execute any external command this way, also with
 	  arguments.
 
-NOTE: All `:`{vim} commands must be finished by hitting `<Enter>`.
+NOTE: All `:` commands must be finished by hitting `<Enter>`.
 	  From here on we will not always mention it.
 
 # Lesson 5.2: MORE ON WRITING FILES
 
-**To save the changes made to the text, type `:w`{vim} FILENAME.**
+**To save the changes made to the text, type `:w` FILENAME.**
 
- 1. Type `:!ls`{vim} to get a listing of your directory.
+ 1. Type `:!ls` to get a listing of your directory.
 	You already know you must hit `<Enter>` after this.
 
  2. Choose a filename that does not exist yet, such as TEST.
@@ -660,7 +660,7 @@ NOTE: All `:`{vim} commands must be finished by hitting `<Enter>`.
    (where TEST is the filename you chose.)
 
  4. This saves the whole file (the Vim Tutor) under the name TEST.
-	To verify this, type `:!ls`{vim} again to see your directory.
+	To verify this, type `:!ls` again to see your directory.
 
 NOTE: If you were to exit Vim and start it again with `nvim TEST`, the file
 	  would be an exact copy of the tutor when you saved it.
@@ -673,7 +673,7 @@ NOTE: If you were to exit Vim and start it again with `nvim TEST`, the file
 
 # Lesson 5.3: SELECTING TEXT TO WRITE
 
-**To save part of the file, type `v` motion `:w FILENAME`{vim}.**
+**To save part of the file, type `v` motion `:w FILENAME`.**
 
  1. Move the cursor to this line.
 
@@ -688,15 +688,15 @@ NOTE: If you were to exit Vim and start it again with `nvim TEST`, the file
 
  4. Type
 
-		`:w TEST`{vim}
+		`:w TEST`
 
 	where TEST is a filename that does not exist yet. Verify that you see
 
-		`:'<,'>w TEST`{vim}
+		`:'<,'>w TEST`
 
 	before you press `<Enter>`.
 
- 5. Vim will write the selected lines to the file TEST. Use `:!ls`{vim} to see    it. Do not remove it yet! We will use it in the next lesson.
+ 5. Vim will write the selected lines to the file TEST. Use `:!ls` to see    it. Do not remove it yet! We will use it in the next lesson.
 
 NOTE: Pressing [v](v) starts [Visual selection](visual-mode). You can move
 	  the cursor around to make the selection bigger or smaller. Then you can
@@ -705,7 +705,7 @@ NOTE: Pressing [v](v) starts [Visual selection](visual-mode). You can move
 
 # Lesson 5.4: RETRIEVING AND MERGING FILES
 
-**To insert the contents of a file, type `:r FILENAME`{vim}.**
+**To insert the contents of a file, type `:r FILENAME`.**
 
  1. Place the cursor just above this line.
 
@@ -714,7 +714,7 @@ NOTE:  After executing Step 2 you will see text from Lesson 5.3. Then move
 
  2. Now retrieve your TEST file using the command
 
-		`:r TEST`{vim}
+		`:r TEST`
 
 	 where TEST is the name of the file you used.
 	 The file you retrieve is placed below the cursor line.
@@ -724,7 +724,7 @@ NOTE:  After executing Step 2 you will see text from Lesson 5.3. Then move
 
 NOTE: You can also read the output of an external command. For example,
 
-		`:r !ls`{vim}
+		`:r !ls`
 
 	  reads the output of the `ls` command and puts it below the cursor.
 
@@ -733,8 +733,8 @@ NOTE: You can also read the output of an external command. For example,
  1. [:!command](:!cmd) executes an external command.
 
 	 Some useful examples are:
-	 `:!ls`{vim}              -  shows a directory listing
-	 `:!rm FILENAME`{vim}     -  removes file FILENAME
+	 `:!ls`              -  shows a directory listing
+	 `:!rm FILENAME`     -  removes file FILENAME
 
  2. [:w](:w) FILENAME             writes the current Vim file to disk with
 							name FILENAME.
@@ -925,11 +925,11 @@ these three:
 	- press the `<HELP>` key (if you have one)
 	- press the `<F1>` key (if you have one)
 	- type
-		`:help`{vim}
+		`:help`
 
 Read the text in the help window to find out how the help works.
 Type `<C-w><C-w>` to jump from one window to another.
-Type `:q`{vim} to close the help window.
+Type `:q` to close the help window.
 
 You can find help on just about any subject, by giving an argument to the
 ":help" command. Try these (don't forget pressing <Enter>):
@@ -949,45 +949,45 @@ Vim has many more features than Vi, but most of them are disabled by
 default. To start using more features you have to create a "vimrc" file.
 
  1. Start editing the "vimrc" file.
-	`:call mkdir(stdpath('config'),'p')`{vim}
-	`:exe 'edit' stdpath('config').'/init.vim'`{vim}
+	`:call mkdir(stdpath('config'),'p')`
+	`:exe 'edit' stdpath('config').'/init.vim'`
 
  2. Write the file with:
-	`:w`{vim}
+	`:w`
 
   You can add all your preferred settings to this "vimrc" file.
-  For more information type `:help vimrc-intro`{vim}.
+  For more information type `:help vimrc-intro`.
 
 # Lesson 7.3: COMPLETION
 
 **Command line completion with `<C-d>` and `<Tab>`.**
 
- 1. Look what files exist in the directory: `:!ls`{vim}
+ 1. Look what files exist in the directory: `:!ls`
 
- 2. Type the start of a command: `:e`{vim}
+ 2. Type the start of a command: `:e`
 
  3. Press `<C-d>` and Vim will show a list of commands that start
 	 with "e".
 
  4. Press `<Tab>` and Vim will complete the command name to ":edit".
 
- 5. Now add a space and the start of an existing file name: `:edit FIL`{vim}
+ 5. Now add a space and the start of an existing file name: `:edit FIL`
 
  6. Press `<Tab>`. Vim will complete the name (if it is unique).
 
 NOTE: Completion works for many commands. It is especially useful for
-	  `:help`{vim}.
+	  `:help`.
 
 # Lesson 7 SUMMARY
 
- 1. Type `:help`{vim}
+ 1. Type `:help`
 	or press `<F1>` or `<Help>` to open a help window.
 
- 2. Type `:help TOPIC`{vim} to find help on TOPIC.
+ 2. Type `:help TOPIC` to find help on TOPIC.
 
  3. Type `<C-w><C-w>` to jump to another window
 
- 4. Type `:q`{vim} to close the help window
+ 4. Type `:q` to close the help window
 
  5. Create a vimrc startup script to keep your preferred settings.
 
