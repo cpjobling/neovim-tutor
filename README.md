@@ -8,7 +8,7 @@ means that you need to do the exercises to learn them properly. If you only
 read the text, you will soon forget what is most important!
 
 For now, make sure that your Shift-Lock key is NOT depressed and press the
-`j`{normal} key enough times to move the cursor so that Lesson 0 completely
+`j` key enough times to move the cursor so that Lesson 0 completely
 fills the screen.
 
 # Lesson 0
@@ -28,42 +28,42 @@ to ✓. I imagine you can already see how neat Vim can be. ;)
 Other times, you'll be prompted to run a command (I'll explain this later):
 
 ~~~ cmd
-    :help <Enter>
+	:help <Enter>
 ~~~
 
 or press a sequence of keys
 
 ~~~ normal
-    <Esc>0f<Space>d3wP$P
+	<Esc>0f<Space>d3wP$P
 ~~~
 
-Text within <'s and >'s (like `<Enter>`{normal}) describes a key to press
+Text within <'s and >'s (like `<Enter>`) describes a key to press
 instead of text to type.
 
-Now, move to the next lesson (use the `j`{normal} key to scroll down).
+Now, move to the next lesson (use the `j` key to scroll down).
 
 ## Lesson 1.1: MOVING THE CURSOR
 
 **To move the cursor, press the `h`, `j`, `k`, `l` keys as indicated.**
 
-         ↑
-         k          Hint: The `h`{normal} key is at the left and moves left.
-     ← h   l →            The `l`{normal} key is at the right and moves right.
-         j                The `j`{normal} key looks like a down arrow.
-         ↓
+		 ↑
+		 k          Hint: The `h` key is at the left and moves left.
+	 ← h   l →            The `l` key is at the right and moves right.
+		 j                The `j` key looks like a down arrow.
+		 ↓
 
   1. Move the cursor around the screen until you are comfortable.
 
-  2. Hold down the down key (`j`{normal}) until it repeats.
-     Now you know how to move to the next lesson.
+  2. Hold down the down key (`j`) until it repeats.
+	 Now you know how to move to the next lesson.
 
   3. Using the down key, move to Lesson 1.2.
 
 NOTE: If you are ever unsure about something you typed, press <Esc> to place
-      you in Normal mode. Then retype the command you wanted.
+	  you in Normal mode. Then retype the command you wanted.
 
 NOTE: The cursor keys should also work. But using hjkl you will be able to
-      move around much faster, once you get used to it. Really!
+	  move around much faster, once you get used to it. Really!
 
 # Lesson 1.2: EXITING VIM
 
@@ -74,31 +74,31 @@ read this entire lesson !!
 
  2. Type:
 
-    `:q!`{vim} `<Enter>`{normal}.
+	`:q!`{vim} `<Enter>`.
 
-     This exits the editor, DISCARDING any changes you have made.
+	 This exits the editor, DISCARDING any changes you have made.
 
  3. Open vim and get back here by executing the command that got you into
-     this tutor. That might be:
+	 this tutor. That might be:
 
-     :Tutor <Enter>
+	 :Tutor <Enter>
 
  4. If you have these steps memorized and are confident, execute steps
-     1 through 3 to exit and re-enter the editor.
+	 1 through 3 to exit and re-enter the editor.
 
 NOTE: [:q!](:q) <Enter> discards any changes you made. In a few lessons you
-       will learn how to save the changes to a file.
+	   will learn how to save the changes to a file.
 
  5. Move the cursor down to Lesson 1.3.
 
 ## Lesson 1.3: TEXT EDITING - DELETION
 
-**Press `x`{normal} to delete the character under the cursor.**
+**Press `x` to delete the character under the cursor.**
 
  1. Move the cursor to the line below marked ✗.
 
  2. To fix the errors, move the cursor until it is on top of the
-     character to be deleted.
+	 character to be deleted.
 
  3. Press [the x key](x) to delete the unwanted character.
 
@@ -109,21 +109,21 @@ The ccow jumpedd ovverr thhe mooon.
  5. Now that the line is correct, go on to Lesson 1.4.
 
 NOTE: As you go through this tutor, do not try to memorize, learn by
-      usage.
+	  usage.
 
 # Lesson 1.4: TEXT EDITING: INSERTION
 
-**Press `i`{normal} to insert text.**
+**Press `i` to insert text.**
 
  1. Move the cursor to the first line below marked ✗.
 
  2. To make the first line the same as the second, move the cursor on top
-     of the first character AFTER where the text is to be inserted.
+	 of the first character AFTER where the text is to be inserted.
 
- 3. Press `i`{normal} and type in the necessary additions.
+ 3. Press `i` and type in the necessary additions.
 
- 4. As each error is fixed press `<Esc>`{normal} to return to Normal mode.
-     Repeat steps 2 through 4 to correct the sentence.
+ 4. As each error is fixed press `<Esc>` to return to Normal mode.
+	 Repeat steps 2 through 4 to correct the sentence.
 
 There is text misng this .
 There is some text missing from this line.
@@ -132,18 +132,18 @@ There is some text missing from this line.
 
 # Lesson 1.5: TEXT EDITING: APPENDING
 
-**Press `A`{normal} to append text.**
+**Press `A` to append text.**
 
  1. Move the cursor to the first line below marked ✗.
-    It does not matter on what character the cursor is in that line.
+	It does not matter on what character the cursor is in that line.
 
  2. Press [A](A) and type in the necessary additions.
 
- 3. As the text has been appended press `<Esc>`{normal} to return to Normal
-     mode.
+ 3. As the text has been appended press `<Esc>` to return to Normal
+	 mode.
 
  4. Move the cursor to the second line marked ✗ and repeat
-    steps 2 and 3 to correct this sentence.
+	steps 2 and 3 to correct this sentence.
 
 There is some text missing from th
 There is some text missing from this line.
@@ -159,64 +159,64 @@ There is also some text missing here.
 !! NOTE: Before executing any of the steps below, read this entire lesson !!
 
  1. Exit this tutor as you did in Lesson 1.2: `:q!`{vim}
-    Or, if you have access to another terminal, do the following there.
+	Or, if you have access to another terminal, do the following there.
 
  2. At the shell prompt type this command:
 
 ~~~ sh
-     nvim tutor
+	 nvim tutor
 ~~~
 
-    'nvim' is the command to start the Nvim editor, 'tutor' is the name of
-    the file you wish to edit. Use a file that may be changed.
+	'nvim' is the command to start the Nvim editor, 'tutor' is the name of
+	the file you wish to edit. Use a file that may be changed.
 
  3. Insert and delete text as you learned in the previous lessons.
 
  4. Save the file with changes and exit Vim with:
 
 ~~~ cmd
-     :wq
+	 :wq
 ~~~
 
-    Note you'll need to press `<Enter>` to execute the command.
+	Note you'll need to press `<Enter>` to execute the command.
 
  5. If you have quit vimtutor in step 1 restart the vimtutor and move down
-     to the following summary.
+	 to the following summary.
 
  6. After reading the above steps and understanding them: do it.
 
 # Lesson 1 SUMMARY
 
  1. The cursor is moved using either the arrow keys or the hjkl keys.
-     h (left)   j (down)       k (up)       l (right)
+	 h (left)   j (down)       k (up)       l (right)
 
  2. To start Vim from the shell prompt type:
 
 ~~~ sh
-    nvim FILENAME
+	nvim FILENAME
 ~~~
 
- 3. To exit Vim type: `<Esc>`{normal} `:q!`{vim} `<Enter>`{normal} to trash
-    all changes.
-              OR type: `<Esc>`{normal} `:wq`{vim} `<Enter>`{normal} to save
-    the changes.
+ 3. To exit Vim type: `<Esc>` `:q!`{vim} `<Enter>` to trash
+	all changes.
+			  OR type: `<Esc>` `:wq`{vim} `<Enter>` to save
+	the changes.
 
- 4. To delete the character at the cursor type: `x`{normal}
+ 4. To delete the character at the cursor type: `x`
 
  5. To insert or append text type:
-    `i`{normal} insert text `<Esc>`{normal}     insert before the cursor.
-    `A`{normal} append text `<Esc>`{normal}     append after the line.
+	`i` insert text `<Esc>`     insert before the cursor.
+	`A` append text `<Esc>`     append after the line.
 
-NOTE: Pressing `<Esc>`{normal} will place you in Normal mode or will cancel
-      an unwanted and partially completed command.
+NOTE: Pressing `<Esc>` will place you in Normal mode or will cancel
+	  an unwanted and partially completed command.
 
 Now continue with Lesson 2.
 
 # Lesson 2.1: DELETION COMMANDS
 
-**Type `dw`{normal} to delete a word.**
+**Type `dw` to delete a word.**
 
- 1. Press `<Esc>`{normal} to make sure you are in Normal mode.
+ 1. Press `<Esc>` to make sure you are in Normal mode.
 
  2. Move the cursor to the line below marked ✗.
 
@@ -230,15 +230,15 @@ There are a some words fun that don't belong paper in this sentence.
 
 # Lesson 2.2: MORE DELETION COMMANDS
 
-**Type `d$`{normal} to delete to the end of the line.**
+**Type `d$` to delete to the end of the line.**
 
- 1. Press `<Esc>`{normal} to make sure you are in Normal mode.
+ 1. Press `<Esc>` to make sure you are in Normal mode.
 
  2. Move the cursor to the line below marked ✗.
 
  3. Move the cursor to the end of the correct line (AFTER the first . ).
 
- 4. Type `d$`{normal} to delete to the end of the line.
+ 4. Type `d$` to delete to the end of the line.
 
 Somebody typed the end of this line twice. end of this line twice.
 
@@ -250,21 +250,21 @@ Many commands that change text are made from an [operator](operator) and
 a [motion](navigation).
 The format for a delete command with the [d](d) delete operator is as follows:
 
-    d   motion
+	d   motion
 
   Where:
-    d      - is the delete operator.
-    motion - is what the operator will operate on (listed below).
+	d      - is the delete operator.
+	motion - is what the operator will operate on (listed below).
 
   A short list of motions:
-    [w](w) - until the start of the next word, EXCLUDING its first character.
-    [e](e) - to the end of the current word, INCLUDING the last character.
-    [$]($) - to the end of the line, INCLUDING the last character.
+	[w](w) - until the start of the next word, EXCLUDING its first character.
+	[e](e) - to the end of the current word, INCLUDING the last character.
+	[$]($) - to the end of the line, INCLUDING the last character.
 
-  Thus typing `de`{normal} will delete from the cursor to the end of the word.
+  Thus typing `de` will delete from the cursor to the end of the word.
 
 NOTE:  Pressing just the motion while in Normal mode without an operator
-       will move the cursor as specified.
+	   will move the cursor as specified.
 
 # Lesson 2.4: USING A COUNT FOR A MOTION
 
@@ -272,11 +272,11 @@ NOTE:  Pressing just the motion while in Normal mode without an operator
 
  1. Move the cursor to the start of the line marked ✓ below.
 
- 2. Type `2w`{normal} to move the cursor two words forward.
+ 2. Type `2w` to move the cursor two words forward.
 
- 3. Type `3e`{normal} to move the cursor to the end of the third word forward.
+ 3. Type `3e` to move the cursor to the end of the third word forward.
 
- 4. Type `0`{normal} ([zero](0)) to move to the start of the line.
+ 4. Type `0` ([zero](0)) to move to the start of the line.
 
  5. Repeat steps 2 and 3 with different numbers.
 
@@ -290,20 +290,20 @@ This is just a line with words you can move around in.
 
 In the combination of the delete operator and a motion mentioned above you
 insert a count before the motion to delete more:
-     d   number   motion
+	 d   number   motion
 
  1. Move the cursor to the first UPPER CASE word in the line marked ✗.
 
- 2. Type `d2w`{normal} to delete the two UPPER CASE words
+ 2. Type `d2w` to delete the two UPPER CASE words
 
  3. Repeat steps 1 and 2 with a different count to delete the consecutive
-    UPPER CASE words with one command
+	UPPER CASE words with one command
 
 This ABC DE line FGHI JK LMN OP of words is Q RS TUV cleaned up.
 
 # Lesson 2.6: OPERATING ON LINES
 
-**Type `dd`{normal} to delete a whole line.**
+**Type `dd` to delete a whole line.**
 
 Due to the frequency of whole line deletion, the designers of Vi decided
 it would be easier to simply type two d's to delete a line.
@@ -311,7 +311,7 @@ it would be easier to simply type two d's to delete a line.
  1. Move the cursor to the second line in the phrase below.
  2. Type [dd](dd) to delete the line.
  3. Now move to the fourth line.
- 4. Type `2dd`{normal} to delete two lines.
+ 4. Type `2dd` to delete two lines.
 
 1) Roses are red,
 2) Mud is fun,
@@ -323,18 +323,18 @@ it would be easier to simply type two d's to delete a line.
 
 # Lesson 2.7: THE UNDO COMMAND
 
-**Press `u`{normal} to undo the last commands, `U`{normal} to fix a whole line.**
+**Press `u` to undo the last commands, `U` to fix a whole line.**
 
  1. Move the cursor to the line below marked ✗ and place it on the
-    first error.
- 2. Type `x`{normal} to delete the first unwanted character.
- 3. Now type `u`{normal} to undo the last command executed.
- 4. This time fix all the errors on the line using the `x`{normal} command.
- 5. Now type a capital `U`{normal} to return the line to its original state.
- 6. Now type `u`{normal} a few times to undo the `U`{normal} and preceding
-    commands.
- 7. Now type `<C-r>`{normal} (Control + R) a few times to redo the commands
-     (undo the undos).
+	first error.
+ 2. Type `x` to delete the first unwanted character.
+ 3. Now type `u` to undo the last command executed.
+ 4. This time fix all the errors on the line using the `x` command.
+ 5. Now type a capital `U` to return the line to its original state.
+ 6. Now type `u` a few times to undo the `U` and preceding
+	commands.
+ 7. Now type `<C-r>` (Control + R) a few times to redo the commands
+	 (undo the undos).
 
 Fiix the errors oon thhis line and reeplace them witth undo.
 
@@ -342,37 +342,37 @@ Fiix the errors oon thhis line and reeplace them witth undo.
 
 # Lesson 2 SUMMARY
 
- 1. To delete from the cursor up to the next word type:    `dw`{normal}
- 2. To delete from the cursor to the end of a line type:   `d$`{normal}
- 3. To delete a whole line type:                           `dd`{normal}
- 4. To repeat a motion prepend it with a number:           `2w`{normal}
+ 1. To delete from the cursor up to the next word type:    `dw`
+ 2. To delete from the cursor to the end of a line type:   `d$`
+ 3. To delete a whole line type:                           `dd`
+ 4. To repeat a motion prepend it with a number:           `2w`
 
  5. The format for a change command is:
-               operator   [number]   motion
-    where:
-       operator -   is what to do, such as [d](d) for delete
-       [number] -   is an optional count to repeat the motion
-       motion   -   moves over the text to operate on, such as:
-                        [w](w) (word),
-                        [$]($) (to the end of line), etc.
+			   operator   [number]   motion
+	where:
+	   operator -   is what to do, such as [d](d) for delete
+	   [number] -   is an optional count to repeat the motion
+	   motion   -   moves over the text to operate on, such as:
+						[w](w) (word),
+						[$]($) (to the end of line), etc.
 
  6. To move to the start of the line use a zero: [0](0)
 
- 7. To undo previous actions, type:            `u`{normal}  (lowercase u)
-    To undo all the changes on a line, type:   `U`{normal}  (capital U)
-    To undo the undo's, type:                  `<C-r>`{normal}
+ 7. To undo previous actions, type:            `u`  (lowercase u)
+	To undo all the changes on a line, type:   `U`  (capital U)
+	To undo the undo's, type:                  `<C-r>`
 
 # Lesson 3.1: THE PUT COMMAND
 
-**Type `p`{normal} to put previously deleted text after the cursor.**
+**Type `p` to put previously deleted text after the cursor.**
 
  1. Move the cursor to the first ✓ line below.
 
- 2. Type `dd`{normal} to delete the line and store it in a Vim register.
+ 2. Type `dd` to delete the line and store it in a Vim register.
 
  3. Move the cursor to the c) line, ABOVE where the deleted line should go.
 
- 4. Type `p`{normal} to put the line below the cursor.
+ 4. Type `p` to put the line below the cursor.
 
  5. Repeat steps 2 through 4 to put all the lines in correct order.
 
@@ -383,13 +383,13 @@ a) Roses are red,
 
 # Lesson 3.2: THE REPLACE COMMAND
 
-**Type `rx`{normal} to replace the character at the cursor with x.**
+**Type `rx` to replace the character at the cursor with x.**
 
  1. Move the cursor to the first line below marked ✗.
 
  2. Move the cursor so that it is on top of the first error.
 
- 3. Type `r`{normal} and then the character which should be there.
+ 3. Type `r` and then the character which should be there.
 
  4. Repeat steps 2 and 3 until the first line is equal to the second one.
 
@@ -402,16 +402,16 @@ NOTE: Remember that you should be learning by doing, not memorization.
 
 # Lesson 3.3: THE CHANGE OPERATOR
 
-**To change until the end of a word, type `ce`{normal}.**
+**To change until the end of a word, type `ce`.**
 
  1. Move the cursor to the first line below marked ✗.
 
  2. Place the cursor on the "u" in "lubw".
 
- 3. Type `ce`{normal} and the correct word (in this case, type "ine" ).
+ 3. Type `ce` and the correct word (in this case, type "ine" ).
 
- 4. Press `<Esc>`{normal} and move to the next character that needs to be
-     changed.
+ 4. Press `<Esc>` and move to the next character that needs to be
+	 changed.
 
  5. Repeat steps 3 and 4 until the first sentence is the same as the second.
 
@@ -420,95 +420,95 @@ This line has a few words that need changing using the change operator.
 
 Notice that [c](c)e deletes the word and places you in Insert mode.
 
-# Lesson 3.4: MORE CHANGES USING `c`{normal}
+# Lesson 3.4: MORE CHANGES USING `c`
 
 **The change operator is used with the same motions as delete.**
 
  1. The change operator works in the same way as delete. The format is:
 
-         c    [number]   motion
+		 c    [number]   motion
 
- 2. The motions are the same, such as `w`{normal} (word) and `$`{normal} (end of line).
+ 2. The motions are the same, such as `w` (word) and `$` (end of line).
 
  3. Move to the first line below marked ✗.
 
  4. Move the cursor to the first error.
 
- 5. Type `c$`{normal} and type the rest of the line like the second and press `<Esc>`{normal}.
+ 5. Type `c$` and type the rest of the line like the second and press `<Esc>`.
 
 The end of this line needs some help to make it like the second.
-The end of this line needs to be corrected using the `c$`{normal} command.
+The end of this line needs to be corrected using the `c$` command.
 
 NOTE: You can use the Backspace key to correct mistakes while typing.
 
 # Lesson 3 SUMMARY
 
  1. To put back text that has just been deleted, type [p](p). This puts the
-    deleted text AFTER the cursor (if a line was deleted it will go on the
-    line below the cursor).
+	deleted text AFTER the cursor (if a line was deleted it will go on the
+	line below the cursor).
 
  2. To replace the character under the cursor, type [r](r) and then the
-    character you want to have there.
+	character you want to have there.
 
  3. The [change operator](c) allows you to change from the cursor to where
-    the motion takes you. Type `ce`{normal} to change from the cursor to the
-    end of the word, `c$`{normal} to change to the end of a line.
+	the motion takes you. Type `ce` to change from the cursor to the
+	end of the word, `c$` to change to the end of a line.
 
  4. The format for change is:
 
-     c   [number]   motion
+	 c   [number]   motion
 
 Now go on to the next lesson.
 
 # Lesson 4.1: CURSOR LOCATION AND FILE STATUS
 
-**Type `<C-g>`{normal} to show your location in a file and the file status.
-Type `G`{normal} to move to a line in the file.**
+**Type `<C-g>` to show your location in a file and the file status.
+Type `G` to move to a line in the file.**
 
 NOTE: Read this entire lesson before executing any of the steps!!
 
- 1. Hold down the `<Ctrl>`{normal} key and press `g`{normal}. We call this
-    `<C-g>`{normal}. A message will appear at the bottom of the page with the
-    filename and the position in the file. Remember the line number for
-    Step 3.
+ 1. Hold down the `<Ctrl>` key and press `g`. We call this
+	`<C-g>`. A message will appear at the bottom of the page with the
+	filename and the position in the file. Remember the line number for
+	Step 3.
 
 NOTE: You may see the cursor position in the lower right corner of the
-      screen. This happens when the ['ruler']('ruler') option is set.
+	  screen. This happens when the ['ruler']('ruler') option is set.
  2. Press [G](G) to move you to the bottom of the file.
-    Type [gg](gg) to move you to the start of the file.
+	Type [gg](gg) to move you to the start of the file.
 
- 3. Type the number of the line you were on and then `G`{normal}. This will
-    return you to the line you were on when you first pressed `<C-g>`{normal}.
+ 3. Type the number of the line you were on and then `G`. This will
+	return you to the line you were on when you first pressed `<C-g>`.
 
  4. If you feel confident to do this, execute steps 1 through 3.
 
 # Lesson 4.2: THE SEARCH COMMAND
 
-**Type `/`{normal} followed by a phrase to search for the phrase.**
+**Type `/` followed by a phrase to search for the phrase.**
 
- 1. In Normal mode type the `/`{normal} character. Notice that it and the
-    cursor appear at the bottom of the screen as with the `:`{normal} command.
+ 1. In Normal mode type the `/` character. Notice that it and the
+	cursor appear at the bottom of the screen as with the `:` command.
 
- 2. Now type 'errroor' `<Enter>`{normal}. This is the word you want to search
-    for.
+ 2. Now type 'errroor' `<Enter>`. This is the word you want to search
+	for.
 
  3. To search for the same phrase again, simply type [n](n).
-    To search for the same phrase in the opposite direction, type [N](N).
+	To search for the same phrase in the opposite direction, type [N](N).
 
  4. To search for a phrase in the backward direction, use [?](?) instead
-    of `/`{normal}.
+	of `/`.
 
- 5. To go back to where you came from press `<C-o>`{normal} (keep `<Ctrl>`{normal}    pressed down while pressing the letter `o`{normal}). Repeat to go back
-    further. `<C-i>`{normal} goes forward.
+ 5. To go back to where you came from press `<C-o>` (keep `<Ctrl>`    pressed down while pressing the letter `o`). Repeat to go back
+	further. `<C-i>` goes forward.
 
 "errroor" is not the way to spell error; errroor is an error.
 
 NOTE: When the search reaches the end of the file it will continue at the
-      start, unless the ['wrapscan']('wrapscan') option has been reset.
+	  start, unless the ['wrapscan']('wrapscan') option has been reset.
 
 # Lesson 4.3: MATCHING PARENTHESES SEARCH
 
-**Type `%`{normal} to find a matching ),], or }.**
+**Type `%` to find a matching ),], or }.**
 
  1. Place the cursor on any (, [, or { in the line below marked ✓.
 
@@ -516,9 +516,9 @@ NOTE: When the search reaches the end of the file it will continue at the
 
  3. The cursor will move to the matching parenthesis or bracket.
 
- 4. Type `%`{normal} to move the cursor to the other matching bracket.
+ 4. Type `%` to move the cursor to the other matching bracket.
 
- 5. Move the cursor to another (,),[,],{ or } and see what `%`{normal} does.
+ 5. Move the cursor to another (,),[,],{ or } and see what `%` does.
 
 This ( is a test line with ('s, ['s ] and {'s } in it. ))
 
@@ -533,175 +533,175 @@ NOTE: This is very useful in debugging a program with unmatched parentheses!
  2. Type
 
 ~~~ cmd
-    :s/thee/the/
+	:s/thee/the/
 ~~~
 
-    NOTE that the [:s](:s) command only changed the first occurrence of "thee" in the line.
+	NOTE that the [:s](:s) command only changed the first occurrence of "thee" in the line.
 
  3. Now type
 
 ~~~ cmd
-     :s/thee/the/g
+	 :s/thee/the/g
 ~~~
 
-    Adding the g [flag](:s_flags) means to substitute globally in the line,
-    change all occurrences of "thee" in the line.
+	Adding the g [flag](:s_flags) means to substitute globally in the line,
+	change all occurrences of "thee" in the line.
 
 Usually thee best time to see thee flowers is in thee spring.
 
  4. To change every occurrence of a character string between two lines, type
 
 ~~~ cmd
-     :#,#s/old/new/g
+	 :#,#s/old/new/g
 ~~~
 
-    where #,# are the line numbers of the range of lines where the
-    substitution is to be done.
+	where #,# are the line numbers of the range of lines where the
+	substitution is to be done.
 
-    Type
+	Type
 
 ~~~ cmd
-    :%s/old/new/g
+	:%s/old/new/g
 ~~~
 
-    to change every occurrence in the whole file.
+	to change every occurrence in the whole file.
 
-    Type
+	Type
 
 ~~~ cmd
-    :%s/old/new/gc
+	:%s/old/new/gc
 ~~~
 
-    to find every occurrence in the whole file, with a prompt whether to
-    substitute or not.
+	to find every occurrence in the whole file, with a prompt whether to
+	substitute or not.
 
 # Lesson 4 SUMMARY
 
- 1. `<C-g>`{normal}     displays your location and the file status.
-    `G`{normal}         moves to the end of the file.
-     number `G`{normal} moves to that line number.
-    `gg`{normal}        moves to the first line.
+ 1. `<C-g>`     displays your location and the file status.
+	`G`         moves to the end of the file.
+	 number `G` moves to that line number.
+	`gg`        moves to the first line.
 
- 2. Typing `/`{normal} followed by a phrase searches FORWARD for the phrase.
-    Typing `?`{normal} followed by a phrase searches BACKWARD for the phrase.
-    After a search type `n`{normal} to find the next occurrence in the same
-    direction or `N`{normal} to search in the opposite direction.
-    `<C-o>`{normal} takes you back to older positions, `<C-i>`{normal} to
-    newer positions.
+ 2. Typing `/` followed by a phrase searches FORWARD for the phrase.
+	Typing `?` followed by a phrase searches BACKWARD for the phrase.
+	After a search type `n` to find the next occurrence in the same
+	direction or `N` to search in the opposite direction.
+	`<C-o>` takes you back to older positions, `<C-i>` to
+	newer positions.
 
- 3. Typing `%`{normal} while the cursor is on a (,),[,],{, or } goes to its
-    match.
+ 3. Typing `%` while the cursor is on a (,),[,],{, or } goes to its
+	match.
 
  4. To substitute new for the first old in a line type
 
 ~~~ cmd
-        :s/old/new
+		:s/old/new
 ~~~
 
-    To substitute new for all 'old's on a line type
+	To substitute new for all 'old's on a line type
 
 ~~~ cmd
-        :s/old/new/g
+		:s/old/new/g
 ~~~
 
-    To substitute phrases between two line #'s type
+	To substitute phrases between two line #'s type
 
 ~~~ cmd
-        :#,#s/old/new/g
+		:#,#s/old/new/g
 ~~~
 
-    To substitute all occurrences in the file type
+	To substitute all occurrences in the file type
 
 ~~~ cmd
-        :%s/old/new/g
+		:%s/old/new/g
 ~~~
 
-    To ask for confirmation each time add 'c'
+	To ask for confirmation each time add 'c'
 
 ~~~ cmd
-        :%s/old/new/gc
+		:%s/old/new/gc
 ~~~
 
 # Lesson 5.1: HOW TO EXECUTE AN EXTERNAL COMMAND
 
 **Type `:!`{vim} followed by an external command to execute that command.**
 
- 1. Type the familiar command `:`{normal} to set the cursor at the bottom of
-    the screen. This allows you to enter a command-line command.
+ 1. Type the familiar command `:` to set the cursor at the bottom of
+	the screen. This allows you to enter a command-line command.
 
  2. Now type the [!](!cmd) (exclamation point) character. This allows you to
-    execute any external shell command.
+	execute any external shell command.
 
- 3. As an example type "ls" following the "!" and then hit `<Enter>`{normal}.
-    This will show you a listing of your directory, just as if you were
-    at the shell prompt.
+ 3. As an example type "ls" following the "!" and then hit `<Enter>`.
+	This will show you a listing of your directory, just as if you were
+	at the shell prompt.
 
 NOTE: It is possible to execute any external command this way, also with
-      arguments.
+	  arguments.
 
-NOTE: All `:`{vim} commands must be finished by hitting `<Enter>`{normal}.
-      From here on we will not always mention it.
+NOTE: All `:`{vim} commands must be finished by hitting `<Enter>`.
+	  From here on we will not always mention it.
 
 # Lesson 5.2: MORE ON WRITING FILES
 
 **To save the changes made to the text, type `:w`{vim} FILENAME.**
 
  1. Type `:!ls`{vim} to get a listing of your directory.
-    You already know you must hit `<Enter>`{normal} after this.
+	You already know you must hit `<Enter>` after this.
 
  2. Choose a filename that does not exist yet, such as TEST.
 
  3. Now type:
 
 ~~~ cmd
-        :w TEST
+		:w TEST
 ~~~
 
    (where TEST is the filename you chose.)
 
  4. This saves the whole file (the Vim Tutor) under the name TEST.
-    To verify this, type `:!ls`{vim} again to see your directory.
+	To verify this, type `:!ls`{vim} again to see your directory.
 
 NOTE: If you were to exit Vim and start it again with `nvim TEST`, the file
-      would be an exact copy of the tutor when you saved it.
+	  would be an exact copy of the tutor when you saved it.
 
  5. Now remove the file by typing:
 
 ~~~ cmd
-        :!rm TEST
+		:!rm TEST
 ~~~
 
 # Lesson 5.3: SELECTING TEXT TO WRITE
 
-**To save part of the file, type `v`{normal} motion `:w FILENAME`{vim}.**
+**To save part of the file, type `v` motion `:w FILENAME`{vim}.**
 
  1. Move the cursor to this line.
 
  2. Press [v](v) and move the cursor to the fifth item below. Notice that the
-    text is highlighted.
+	text is highlighted.
 
- 3. Press the `:`{normal} character. At the bottom of the screen
+ 3. Press the `:` character. At the bottom of the screen
 
-        :'<,'>
+		:'<,'>
 
-    will appear.
+	will appear.
 
  4. Type
 
-        `:w TEST`{vim}
+		`:w TEST`{vim}
 
-    where TEST is a filename that does not exist yet. Verify that you see
+	where TEST is a filename that does not exist yet. Verify that you see
 
-        `:'<,'>w TEST`{vim}
+		`:'<,'>w TEST`{vim}
 
-    before you press `<Enter>`{normal}.
+	before you press `<Enter>`.
 
  5. Vim will write the selected lines to the file TEST. Use `:!ls`{vim} to see    it. Do not remove it yet! We will use it in the next lesson.
 
 NOTE: Pressing [v](v) starts [Visual selection](visual-mode). You can move
-      the cursor around to make the selection bigger or smaller. Then you can
-      use an operator to do something with the text. For example, `d`{normal}
-      deletes the text.
+	  the cursor around to make the selection bigger or smaller. Then you can
+	  use an operator to do something with the text. For example, `d`
+	  deletes the text.
 
 # Lesson 5.4: RETRIEVING AND MERGING FILES
 
@@ -710,97 +710,97 @@ NOTE: Pressing [v](v) starts [Visual selection](visual-mode). You can move
  1. Place the cursor just above this line.
 
 NOTE:  After executing Step 2 you will see text from Lesson 5.3. Then move
-       DOWN to see this lesson again.
+	   DOWN to see this lesson again.
 
  2. Now retrieve your TEST file using the command
 
-        `:r TEST`{vim}
+		`:r TEST`{vim}
 
-     where TEST is the name of the file you used.
-     The file you retrieve is placed below the cursor line.
+	 where TEST is the name of the file you used.
+	 The file you retrieve is placed below the cursor line.
 
  3. To verify that a file was retrieved, cursor back and notice that there
-    are now two copies of Lesson 5.3, the original and the file version.
+	are now two copies of Lesson 5.3, the original and the file version.
 
 NOTE: You can also read the output of an external command. For example,
 
-        `:r !ls`{vim}
+		`:r !ls`{vim}
 
-      reads the output of the `ls` command and puts it below the cursor.
+	  reads the output of the `ls` command and puts it below the cursor.
 
 # Lesson 5 SUMMARY
 
  1. [:!command](:!cmd) executes an external command.
 
-     Some useful examples are:
-     `:!ls`{vim}              -  shows a directory listing
-     `:!rm FILENAME`{vim}     -  removes file FILENAME
+	 Some useful examples are:
+	 `:!ls`{vim}              -  shows a directory listing
+	 `:!rm FILENAME`{vim}     -  removes file FILENAME
 
  2. [:w](:w) FILENAME             writes the current Vim file to disk with
-                            name FILENAME.
+							name FILENAME.
 
  3. [v](v)  motion  :w FILENAME   saves the Visually selected lines in file
-                             FILENAME.
+							 FILENAME.
 
  4. [:r](:r) FILENAME             retrieves disk file FILENAME and puts it
-                            below the cursor position.
+							below the cursor position.
 
  5. [:r !dir](:r!)                reads the output of the dir command and
-                           puts it below the cursor position.
+						   puts it below the cursor position.
 
 # Lesson 6.1: THE OPEN COMMAND
 
-**Type `o`{normal} to open a line below the cursor and place you in Insert mode.**
+**Type `o` to open a line below the cursor and place you in Insert mode.**
 
  1. Move the cursor to the line below marked ✓.
 
- 2. Type the lowercase letter `o`{normal} to [open](o) up a line BELOW the
-    cursor and place you in Insert mode.
+ 2. Type the lowercase letter `o` to [open](o) up a line BELOW the
+	cursor and place you in Insert mode.
 
- 3. Now type some text and press `<Esc>`{normal} to exit Insert mode.
+ 3. Now type some text and press `<Esc>` to exit Insert mode.
 
-After typing `o`{normal} the cursor is placed on the open line in Insert mode.
+After typing `o` the cursor is placed on the open line in Insert mode.
 
  4. To open up a line ABOVE the cursor, simply type a [capital O](O), rather
-    than a lowercase `o`{normal}. Try this on the line below.
+	than a lowercase `o`. Try this on the line below.
 
 Open up a line above this by typing O while the cursor is on this line.
 
 # Lesson 6.2: THE APPEND COMMAND
 
-**Type `a`{normal} to insert text AFTER the cursor.**
+**Type `a` to insert text AFTER the cursor.**
 
  1. Move the cursor to the start of the line below marked ✗.
 
- 2. Press `e`{normal} until the cursor is on the end of "li".
+ 2. Press `e` until the cursor is on the end of "li".
 
- 3. Type the lowercase letter `a`{normal} to [append](a) text AFTER the
-     cursor.
+ 3. Type the lowercase letter `a` to [append](a) text AFTER the
+	 cursor.
 
- 4. Complete the word like the line below it. Press `<Esc>`{normal} to exit
-     Insert mode.
+ 4. Complete the word like the line below it. Press `<Esc>` to exit
+	 Insert mode.
 
- 5. Use `e`{normal} to move to the next incomplete word and repeat steps 3
-     and 4.
+ 5. Use `e` to move to the next incomplete word and repeat steps 3
+	 and 4.
 
 This li will allow you to pract appendi text to a line.
 This line will allow you to practice appending text to a line.
 
 NOTE: [a](a), [i](i) and [A](A) all go to the same Insert mode, the only
-      difference is where the characters are inserted.
+	  difference is where the characters are inserted.
 
 # Lesson 6.3: ANOTHER WAY TO REPLACE
 
-**Type a capital `R`{normal} to replace more than one character.**
+**Type a capital `R` to replace more than one character.**
 
  1. Move the cursor to the first line below marked ✗. Move the cursor to
-     the beginning of the first "xxx".
+	 the beginning of the first "xxx".
 
- 2. Now press `R`{normal} ([capital R](R)) and type the number below it in the
+ 2. Now press `R` ([capital R](R)) and type the number below it in the
  second line, so that it replaces the "xxx".
 
- 3. Press `<Esc>`{normal} to leave [Replace mode](mode-replace). Notice that
-     the rest of the line remains unmodified.
+ 3. Press `<Esc>` to leave [Replace mode](mode-replace). Notice that
+	 the rest of the line remains unmodified.
 
  4. Repeat the steps to replace the remaining "xxx".
 
@@ -808,54 +808,54 @@ Adding 123 to xxx gives you xxx.
 Adding 123 to 456 gives you 579.
 
 NOTE: Replace mode is like Insert mode, but every typed character deletes an
-      existing character.
+	  existing character.
 
 # Lesson 6.4: COPY AND PASTE TEXT
 
-**Use the `y`{normal} operator to copy text and `p`{normal} to paste it.**
+**Use the `y` operator to copy text and `p` to paste it.**
 
  1. Go to the line marked with ✓ below and place the cursor after "a)".
 
- 2. Start Visual mode with `v`{normal} and move the cursor to just before
-    "first".
+ 2. Start Visual mode with `v` and move the cursor to just before
+	"first".
 
- 3. Type `y`{normal} to [yank](yank) (copy) the highlighted text.
+ 3. Type `y` to [yank](yank) (copy) the highlighted text.
 
- 4. Move the cursor to the end of the next line: `j$`{normal}
+ 4. Move the cursor to the end of the next line: `j$`
 
- 5. Type `p`{normal} to [put](put) (paste) the text.
+ 5. Type `p` to [put](put) (paste) the text.
 
- 6. Press `a`{normal} and then type "second". Press `<Esc>`{normal} to leave
-    Insert mode.
+ 6. Press `a` and then type "second". Press `<Esc>` to leave
+	Insert mode.
 
- 7. Use Visual mode to select "item.", yank it with `y`{normal}, move to the
-    end of the next line with `j$`{normal} and put the text there with `p`{normal}
+ 7. Use Visual mode to select "item.", yank it with `y`, move to the
+	end of the next line with `j$` and put the text there with `p`
 
 a) This is the first item.
 b)
 
-NOTE: you can use `y`{normal} as an operator: `yw`{normal} yanks one word.
+NOTE: you can use `y` as an operator: `yw` yanks one word.
 
 # Lesson 6.5: SET OPTION
 
 **Set an option so a search or substitute ignores case.**
 
  1. Search for 'ignore' by entering: `/ignore`
-    Repeat several times by pressing `n`{normal}.
+	Repeat several times by pressing `n`.
 
  2. Set the 'ic' (Ignore case) option by entering:
 
 ~~~ cmd
-        :set ic
+		:set ic
 ~~~
 
- 3. Now search for 'ignore' again by pressing `n`{normal}.
-    Notice that Ignore and IGNORE are now also found.
+ 3. Now search for 'ignore' again by pressing `n`.
+	Notice that Ignore and IGNORE are now also found.
 
  4. Set the 'hlsearch' and 'incsearch' options:
 
 ~~~ cmd
-        :set hls is
+		:set hls is
 ~~~
 
  5. Now type the search command again and see what happens: /ignore <Enter>
@@ -863,57 +863,57 @@ NOTE: you can use `y`{normal} as an operator: `yw`{normal} yanks one word.
  6. To disable ignoring case enter:
 
 ~~~ cmd
-        :set noic
+		:set noic
 ~~~
 
  7. To toggle the value of a setting, prepend it with "inv":
 
 ~~~ cmd
-        :set invic
+		:set invic
 ~~~
 
 NOTE: To remove the highlighting of matches enter:
 
 ~~~ cmd
-        :nohlsearch
+		:nohlsearch
 ~~~
 
 NOTE: If you want to ignore case for just one search command, use [\c](/\c)
-      in the phrase: /ignore\c <Enter>
+	  in the phrase: /ignore\c <Enter>
 
 # Lesson 6 SUMMARY
 
- 1. Type `o`{normal} to open a line BELOW the cursor and start Insert mode.
-    Type `O`{normal} to open a line ABOVE the cursor.
+ 1. Type `o` to open a line BELOW the cursor and start Insert mode.
+	Type `O` to open a line ABOVE the cursor.
 
- 2. Type `a`{normal} to insert text AFTER the cursor.
-    Type `A`{normal} to insert text after the end of the line.
+ 2. Type `a` to insert text AFTER the cursor.
+	Type `A` to insert text after the end of the line.
 
- 3. The `e`{normal} command moves to the end of a word.
+ 3. The `e` command moves to the end of a word.
 
- 4. The `y`{normal} operator copies text, `p`{normal} pastes it.
+ 4. The `y` operator copies text, `p` pastes it.
 
- 5. Typing a capital `R`{normal} enters Replace mode until `<Esc>`{normal} is
-     pressed.
+ 5. Typing a capital `R` enters Replace mode until `<Esc>` is
+	 pressed.
 
  6. Typing "[:set](:set) xxx" sets the option "xxx". Some options are:
 
-        'ic' 'ignorecase'   ignore upper/lower case when searching
-        'is' 'incsearch'    show partial matches for a search phrase
-        'hls' 'hlsearch'    highlight all matching phrases
+		'ic' 'ignorecase'   ignore upper/lower case when searching
+		'is' 'incsearch'    show partial matches for a search phrase
+		'hls' 'hlsearch'    highlight all matching phrases
 
-     You can either use the long or the short option name.
+	 You can either use the long or the short option name.
 
  7. Prepend "no" to switch an option off:
 
 ~~~ cmd
-        :set noic
+		:set noic
 ~~~
 
  8. Prepend "inv" to toggle an option:
 
 ~~~ cmd
-        :set invic
+		:set invic
 ~~~
 
 # Lesson 7.1: GETTING HELP
@@ -922,23 +922,23 @@ NOTE: If you want to ignore case for just one search command, use [\c](/\c)
 
 Vim has a comprehensive on-line help system. To get started, try one of
 these three:
-    - press the `<HELP>`{normal} key (if you have one)
-    - press the `<F1>`{normal} key (if you have one)
-    - type
-        `:help`{vim}
+	- press the `<HELP>` key (if you have one)
+	- press the `<F1>` key (if you have one)
+	- type
+		`:help`{vim}
 
 Read the text in the help window to find out how the help works.
-Type `<C-w><C-w>`{normal} to jump from one window to another.
+Type `<C-w><C-w>` to jump from one window to another.
 Type `:q`{vim} to close the help window.
 
 You can find help on just about any subject, by giving an argument to the
 ":help" command. Try these (don't forget pressing <Enter>):
 
 ~~~ cmd
-    :help w
-    :help c_CTRL-D
-    :help insert-index
-    :help user-manual
+	:help w
+	:help c_CTRL-D
+	:help insert-index
+	:help user-manual
 ~~~
 
 # Lesson 7.2: CREATE A STARTUP SCRIPT
@@ -949,50 +949,50 @@ Vim has many more features than Vi, but most of them are disabled by
 default. To start using more features you have to create a "vimrc" file.
 
  1. Start editing the "vimrc" file.
-    `:call mkdir(stdpath('config'),'p')`{vim}
-    `:exe 'edit' stdpath('config').'/init.vim'`{vim}
+	`:call mkdir(stdpath('config'),'p')`{vim}
+	`:exe 'edit' stdpath('config').'/init.vim'`{vim}
 
  2. Write the file with:
-    `:w`{vim}
+	`:w`{vim}
 
   You can add all your preferred settings to this "vimrc" file.
   For more information type `:help vimrc-intro`{vim}.
 
 # Lesson 7.3: COMPLETION
 
-**Command line completion with `<C-d>`{normal} and `<Tab>`{normal}.**
+**Command line completion with `<C-d>` and `<Tab>`.**
 
  1. Look what files exist in the directory: `:!ls`{vim}
 
  2. Type the start of a command: `:e`{vim}
 
- 3. Press `<C-d>`{normal} and Vim will show a list of commands that start
-     with "e".
+ 3. Press `<C-d>` and Vim will show a list of commands that start
+	 with "e".
 
- 4. Press `<Tab>`{normal} and Vim will complete the command name to ":edit".
+ 4. Press `<Tab>` and Vim will complete the command name to ":edit".
 
  5. Now add a space and the start of an existing file name: `:edit FIL`{vim}
 
- 6. Press `<Tab>`{normal}. Vim will complete the name (if it is unique).
+ 6. Press `<Tab>`. Vim will complete the name (if it is unique).
 
 NOTE: Completion works for many commands. It is especially useful for
-      `:help`{vim}.
+	  `:help`{vim}.
 
 # Lesson 7 SUMMARY
 
  1. Type `:help`{vim}
-    or press `<F1>`{normal} or `<Help>`{normal} to open a help window.
+	or press `<F1>` or `<Help>` to open a help window.
 
  2. Type `:help TOPIC`{vim} to find help on TOPIC.
 
- 3. Type `<C-w><C-w>`{normal} to jump to another window
+ 3. Type `<C-w><C-w>` to jump to another window
 
  4. Type `:q`{vim} to close the help window
 
  5. Create a vimrc startup script to keep your preferred settings.
 
- 6. While in command mode, press `<C-d>`{normal} to see possible completions.
-     Press `<Tab>`{normal} to use one completion.
+ 6. While in command mode, press `<C-d>` to see possible completions.
+	 Press `<Tab>` to use one completion.
 
 # CONCLUSION
 
